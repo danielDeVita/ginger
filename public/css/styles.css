@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Title";
+  src: local("Impossible"),
+    url("/fonts/Impossible.otf") format("opentype");
+}
+
 /********************* Menu Styles ****************/
 
 .menuItem {
@@ -91,4 +97,6 @@ footer ul {
 
 footer h5 {
   margin-bottom: 1rem;
+  font-family: "Title";
+  font-size: 2.5rem;
 }
