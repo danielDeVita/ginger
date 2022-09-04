@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/********************* Menu styles ****************/
+/********************* Menu Styles ****************/
 
 .menuItem {
   display: block;
@@ -60,4 +60,35 @@
   margin-top: .5rem;
   margin-left: 1rem;
   width: 60px;
+}
+
+/********************* Section Styles ****************/
+
+.carrousel {
+  height: 200px;
+  background-color: antiquewhite;
+}
+.mission {
+  height: 200px;
+  background-color: rgb(69, 0, 72);
+}
+.products {
+  height: 200px;
+  background-color: rgb(39, 15, 180);
+}
+
+/********************* Footer Styles  ****************/
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer h5 {
+  margin-bottom: 1rem;
 }
