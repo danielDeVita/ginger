@@ -60,7 +60,7 @@
 
 .logo {
   position: fixed;
-  border: solid 1px red;
+  z-index: 99;
 }
 
 .logo img {
@@ -165,28 +165,11 @@
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-  .slprev,
-  .slnext,
-  .text {
-    font-size: 11px
-  }
-}
-
 /* este .carrousel img es solo demostrativo */
 .carrousel img {
   width: 100%;
   height: 100%;
   margin: auto;
-}
-
-/********************* Section Styles ****************/
-
-.carrousel {
-  height: 200px;
-  background-color: antiquewhite;
 }
 
 .mission {
