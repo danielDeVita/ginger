@@ -72,7 +72,15 @@
 
     </section>
     <section class="mission"></section>
-    <section class="products"></section>
+    <section class="products">
+      <ul>
+      <%for(product of products) {%>
+        <li>
+          <%=product.name%>
+        </li>
+      <%}%>
+    </ul>
+    </section>
     <footer>
       <div>
         <ul>
