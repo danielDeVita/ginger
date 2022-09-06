@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel = "stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Ginger</title>
 </head>
+
 <body>
-    <main>
-      <header>
-        <nav>
-          <div class="logo">
-            <img src="/images/ginger-logo.png">
-          </div>
-          <div class="menu-hamburger">
-            <ul class="menu">
-              <li><a class="menuItem" href="#">Home</a></li>
-              <li><a class="menuItem" href="#">Profile</a></li>
-              <li><a class="menuItem" href="#">About</a></li>
-              <li><a class="menuItem" href="#">Contacts</a></li>
-            </ul>
-            <button class="hamburger">
-              <i class="menuIcon material-icons">menu</i>
-              <i class="closeIcon material-icons">close</i>
-            </button>
-          </div>
-        </nav>
-      </header>
-      <section class="carrousel"></section>
-      <section class="mission"></section>
-      <section class="products"></section>
-      <footer>
-        <div>
-          <ul>
-            <h5>Contacto</h5>
-            <li>2216253302</li>
-            <li>gingerpostreslp@gmail.com</li>
-          </ul>
+  <main>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/ginger-logo.png">
         </div>
-        <div>
-          <ul>
-            <h5>Dirección</h5>
-            <li>Diagonal 74 1410 y medio (entre 9 y 47)</li>
+        <div class="menu-hamburger">
+          <ul class="menu">
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Profile</a></li>
+            <li><a class="menuItem" href="#">About</a></li>
+            <li><a class="menuItem" href="#">Contacts</a></li>
           </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
         </div>
-        <div>
-          <ul>
-            <h5>Horarios</h5>
-            <li>Martes a Domingos de 12hs a 23.30hs</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <h5>Encontranos</h5>
-            <li><a href="https://www.facebook.com/hoyginger"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.instagram.com/ginger.postres/"><i class="fa-brands fa-instagram"></i></a></li>
-          </ul>
+      </nav>
+    </header>
+    <section class="carrousel">
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/" style="width:100%" alt="" />
+          <!-- <div class="text">Caption Uno</div> -->
         </div>
 
-      </footer>
+        <div class="mySlides fade">
+          <img src="images/" style="width:100%" alt="" />
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
 
-    </main>
-    <script src="/js/home.js">
+        <div class="mySlides fade">
+          <img src="images/" style="width:100%" alt="" />
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
 
-    </script>
+        <div class="mySlides fade">
+          <img src="images/" style="width:100%" alt="" />
+          <!-- <div class="text">Caption Cuatro</div> -->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+    </section>
+    <section class="mission"></section>
+    <section class="products"></section>
+    <footer>
+      <div>
+        <ul>
+          <h5>Contacto</h5>
+          <li>2216253302</li>
+          <li>gingerpostreslp@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h5>Dirección</h5>
+          <li>Diagonal 74 1410 y medio (entre 9 y 47)</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h5>Horarios</h5>
+          <li>Martes a Domingos de 12hs a 23.30hs</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h5>Encontranos</h5>
+          <li><a href="https://www.facebook.com/hoyginger"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/ginger.postres/"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+    </footer>
+
+  </main>
+  <script src="/js/home.js"></script>
+  <script src="js/carousel.js" defer></script>
 </body>
+
 </html>
