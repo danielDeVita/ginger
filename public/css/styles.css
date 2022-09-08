@@ -172,14 +172,32 @@
   margin: auto;
 }
 
+/********************* Seccion Styles  ****************/
+
 .mission {
-  height: 200px;
-  background-color: rgb(69, 0, 72);
+  border: solid 1px red;
+  margin: 4rem 2rem 2rem;
 }
 
+.mission h2 {
+  color: rgb(255, 77, 0);
+  font-family: "Title";
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+.mission p {
+  color:rgb(57, 15, 5);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 .products {
-  /* height: 200px; */
   background-color: rgb(39, 15, 180);
+  margin: 4rem 2rem 2rem;
 }
 
 /********************* Footer Styles  ****************/
@@ -201,7 +219,8 @@ footer ul li {
 footer h5 {
   margin-bottom: 1rem;
   font-family: "Title";
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 footer a {
