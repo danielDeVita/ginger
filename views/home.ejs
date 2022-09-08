@@ -80,15 +80,13 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore aperiam dolorum, a suscipit, enim ratione ea sint rem voluptatibus est amet adipisci eos tempore commodi sed quam modi provident.</p>
     </section>
     <section class="products">
-      <ul>
       <%for(product of products) {%>
-        <li>
+        <article>
           <h3><%=product.name%></h3>
           <img src="images/<%=product.image%>" alt="">
           <p><%=product.description%></p>
-        </li>
+        </article>
       <%}%>
-    </ul>
     </section>
     <footer>
       <div>

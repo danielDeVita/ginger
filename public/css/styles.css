@@ -191,21 +191,58 @@
   color:rgb(57, 15, 5);
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1,5rem;
 }
-
-
 
 .products {
-  background-color: rgb(39, 15, 180);
+  /* border: solid 1px red; */
   margin: 4rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+.products article {
+  background-color: rgb(251, 247, 241);
+  /* border: solid 1px red; */
+  border-radius: 8px;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 25%;
+  box-shadow: 0px 0px 42px 1px rgba(57,15,5,0.2);
+  -webkit-box-shadow: 0px 0px 42px 1px rgba(57,15,5,0.2);
+  -moz-box-shadow: 0px 0px 42px 1px rgba(57,15,5,0.2);
+}
+
+.products article img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.products article h3 {
+  font-family: 'Title';
+  font-size: 2rem;
+  font-weight: 100;
+  color:rgb(57, 15, 5);
+  text-align: center;
+}
+
+.products article p {
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  /* width: 80%; */
+  /* display: flex; */
+}
+
 
 /********************* Footer Styles  ****************/
 
 footer {
   display: flex;
   justify-content: space-around;
-  margin: 2rem;
+  padding: 2rem;
+  background-color: rgb(255, 77, 0);
 }
 
 footer ul {
@@ -221,6 +258,13 @@ footer h5 {
   font-family: "Title";
   font-size: 2rem;
   font-weight: 100;
+  color: #f2f2f2;
+}
+
+footer li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: #f2f2f2;
 }
 
 footer a {
