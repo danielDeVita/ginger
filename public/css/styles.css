@@ -178,7 +178,6 @@
 /********************* Seccion Styles  ****************/
 
 .mission {
-  /* border: solid 1px red; */
   margin: 4rem 2rem 2rem;
 }
 
@@ -198,7 +197,6 @@
 }
 
 .products {
-  /* border: solid 1px red; */
   margin: 4rem 2rem 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +205,6 @@
 
 .products article {
   background-color: rgb(251, 247, 241);
-  /* border: solid 1px red; */
   border-radius: 8px;
   margin: 0.5rem;
   padding: 1rem;
@@ -234,8 +231,6 @@
   margin-top: 1rem;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
-  /* width: 80%; */
-  /* display: flex; */
 }
 
 /********************* Footer Styles  ****************/
@@ -244,7 +239,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* justify-content: space-around; */
   padding: 2rem;
   background-color: rgb(255, 77, 0);
 }
@@ -263,7 +257,6 @@ footer ul li {
 }
 
 footer h5 {
-  /* margin-bottom: 1rem; */
   font-family: "Title";
   font-size: 2rem;
   font-weight: 100;
