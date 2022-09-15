@@ -6,5 +6,6 @@ router.get("/", controllers.home);
 router.get("/budines", controllers.budines);
 router.get("/postres", controllers.postres);
 router.get("/cookies", controllers.cookies);
+router.get("/alfajores", controllers.alfajores);
 
 module.exports = router;

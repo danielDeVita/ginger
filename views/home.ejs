@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <title>Ginger</title>
 </head>
 
@@ -25,10 +25,10 @@
         </div>
         <div class="menu-hamburger">
           <ul class="menu">
-            <li><a class="menuItem" href="#">Home</a></li>
-            <li><a class="menuItem" href="#">Profile</a></li>
-            <li><a class="menuItem" href="#">About</a></li>
-            <li><a class="menuItem" href="#">Contacts</a></li>
+            <li><a class="menuItem" href="/budines">Budines</a></li>
+            <li><a class="menuItem" href="/postres">Postres</a></li>
+            <li><a class="menuItem" href="/cookies">Cookies</a></li>
+            <li><a class="menuItem" href="/alfajores">Alfajores</a></li>
           </ul>
           <button class="hamburger">
             <i class="menuIcon material-icons">menu</i>
@@ -77,21 +77,27 @@
 
     <section class="mission">
       <h2>Nuestra misión</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore aperiam dolorum, a suscipit, enim ratione ea sint rem voluptatibus est amet adipisci eos tempore commodi sed quam modi provident.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore aperiam dolorum, a suscipit, enim
+        ratione ea sint rem voluptatibus est amet adipisci eos tempore commodi sed quam modi provident.</p>
     </section>
-    <section class="categorias">
+   <!--  <section class="categorias">
       <a href="/budines">Budines</a>
       <a href="/postres">Postres</a>
       <a href="/cookies">Cookies</a>
-    </section>
+      <a href="/alfajores">Alfajores</a>
+    </section> -->
     <section class="products">
       <%for(product of products) {%>
         <article>
-          <h3><%=product.name%></h3>
+          <h3>
+            <%=product.name%>
+          </h3>
           <img src="images/<%=product.image%>" alt="">
-          <p><%=product.description%></p>
+          <p>
+            <%=product.description%>
+          </p>
         </article>
-      <%}%>
+        <%}%>
     </section>
     <footer>
       <div>

@@ -10,7 +10,6 @@ const controllers = {
       console.error(err);
     }
   },
-
   budines: async (req, res) => {
     try {
       let budines = await db.products.findAll({ where: { category: "Budín" } });
@@ -19,7 +18,6 @@ const controllers = {
       console.error(err);
     }
   },
-
   postres: async (req, res) => {
     try {
       let postres = await db.products.findAll({
@@ -30,7 +28,6 @@ const controllers = {
       console.error(err);
     }
   },
-
   cookies: async (req, res) => {
     try {
       let cookies = await db.products.findAll({
@@ -41,6 +38,16 @@ const controllers = {
       console.error(err);
     }
   },
+  alfajores: async (req, res) => {
+    try {
+      let alfajores = await db.products.findAll({
+        where: { category: "Alfajor" }
+      });
+      res.send(alfajores);
+    } catch (err) {
+      console.error(err)
+    }
+  }
 };
 
 module.exports = controllers;
