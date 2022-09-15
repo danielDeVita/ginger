@@ -5,11 +5,42 @@ const controllers = {
   home: async (req, res) => {
     try {
       let products = await db.products.findAll();
-      res.render("home", { products })
+      res.render("home", { products });
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
-  }
+  },
+
+  budines: async (req, res) => {
+    try {
+      let budines = await db.products.findAll({ where: { category: "Budín" } });
+      res.send(budines);
+    } catch (err) {
+      console.error(err);
+    }
+  },
+
+  postres: async (req, res) => {
+    try {
+      let postres = await db.products.findAll({
+        where: { category: "Postre" },
+      });
+      res.send(postres);
+    } catch (err) {
+      console.error(err);
+    }
+  },
+
+  cookies: async (req, res) => {
+    try {
+      let cookies = await db.products.findAll({
+        where: { category: "Cookie" },
+      });
+      res.send(cookies);
+    } catch (err) {
+      console.error(err);
+    }
+  },
 };
 
 module.exports = controllers;
