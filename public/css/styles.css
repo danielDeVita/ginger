@@ -196,6 +196,29 @@
   font-size: 1, 5rem;
 }
 
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.categorias a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: rgb(255, 77, 0);
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border-radius: 12px;
+  width: 90%;
+  text-align: center;
+  margin: 0.7rem;
+}
+
+.categorias a:hover {
+  background-color: #5b2d2d
+}
+
 .products {
   margin: 4rem 2rem 2rem;
   display: flex;
@@ -296,17 +319,33 @@ footer a {
   footer a:hover {
     color: #230e0e;
   }
+
+  .categorias {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .categorias a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: rgb(255, 77, 0);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 12px;
+  }
 }
 
 @media (min-width: 992px) {
   .products article {
     width: 30%;
   }
-  footer{
+
+  footer {
     flex-wrap: wrap;
   }
 
-  footer div{
+  footer div {
     width: 20%;
   }
 }
