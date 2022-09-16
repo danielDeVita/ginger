@@ -5,7 +5,7 @@ const controllers = {
   home: async (req, res) => {
     try {
       let products = await db.products.findAll();
-      res.render("home", { products });
+      return res.render("home", { products });
     } catch (err) {
       console.error(err);
     }
@@ -13,7 +13,7 @@ const controllers = {
   budines: async (req, res) => {
     try {
       let budines = await db.products.findAll({ where: { category: "Budín" } });
-      res.send(budines);
+      return res.render("home", { products: budines });
     } catch (err) {
       console.error(err);
     }
@@ -23,7 +23,7 @@ const controllers = {
       let postres = await db.products.findAll({
         where: { category: "Postre" },
       });
-      res.send(postres);
+      return res.render("home", { products: postres });
     } catch (err) {
       console.error(err);
     }
@@ -33,7 +33,7 @@ const controllers = {
       let cookies = await db.products.findAll({
         where: { category: "Cookie" },
       });
-      res.send(cookies);
+      return res.render("home", { products: cookies });
     } catch (err) {
       console.error(err);
     }
@@ -43,7 +43,7 @@ const controllers = {
       let alfajores = await db.products.findAll({
         where: { category: "Alfajor" }
       });
-      res.send(alfajores);
+      return res.render("home", { products: alfajores });
     } catch (err) {
       console.error(err)
     }
